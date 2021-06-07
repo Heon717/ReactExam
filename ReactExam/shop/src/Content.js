@@ -1,16 +1,15 @@
 import React , {useState} from 'react';
 
 const Content = (props) => {
-
-    let sho = props.shoes.map((e)=>{
         return (
                 <div className="col-md-4">
-                    <h2>{props.shoes[e].title}</h2>
-                    <p>{props.shoes[e].content}</p>
-                    <p>{props.shoes[e].price}</p>
+                    <img src={"https://codingapple1.github.io/shop/shoes"+(props.shoes.id+1)+".jpg"} width="100%"/>
+                    <h2>{props.shoes.title}</h2>
+                    <p>{props.shoes.content}</p>
+                    <p>{props.shoes.price}</p>
                 </div>
         )
-    })
+
 }
 
 export default Content;
